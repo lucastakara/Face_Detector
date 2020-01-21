@@ -58,7 +58,7 @@ class Network:
         '''
         Makes an Asynchronous Inference request, given an input image.
         '''
-        self.exec_network.start_async(resquest_id = 0, inputs = {self.input_blob:image})
+        self.exec_network.start_async(request_id = 0, inputs = {self.input_blob:image})
         return
 
     def wait(self):
